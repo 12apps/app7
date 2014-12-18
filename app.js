@@ -10,28 +10,6 @@ var users = require('./routes/users');
 
 var app = express();
 
-// Request API access: http://www.yelp.com/developers/getting_started/api_access
-
-var yelp = require("yelp").createClient({
-  consumer_key: process.env.CONSUMER_KEY,
-  consumer_secret: process.env.CONSUMER_SECRET,
-  token: process.env.TOKEN,
-  token_secret: process.env.TOKEN_SECRET
-});
-
-// See http://www.yelp.com/developers/documentation/v2/search_api
-yelp.search({term: "food", location: "San Francisco"}, function(error, data) {
-  console.log(error);
-  console.log(data);
-});
-
-// See http://www.yelp.com/developers/documentation/v2/business
-yelp.business("yelp-san-francisco", function(error, data) {
-  console.log(error);
-  console.log(data);
-});
-
-//end yelp
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
