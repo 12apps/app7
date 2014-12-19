@@ -46,11 +46,10 @@
         url: "/yelp" + "?latlon=" + lat + "," + lon
       }).done(function(data){
         businesses = data.businesses;
+        businesses = _.sortBy(businesses, function(o){return o.rating}).reverse();
         update();
         console.log(data);
       })
     })
   }
-
-
 })();

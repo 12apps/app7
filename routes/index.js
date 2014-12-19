@@ -22,7 +22,7 @@ router.get('/yelp', function(req, res) {
 
 function yelpSearch(latlon, res){
   // See http://www.yelp.com/developers/documentation/v2/search_api
-  yelp.search({term: "food", ll: latlon }, function(error, data) {
+  yelp.search({term: "food", ll: latlon, limit: 6, sort: 1 }, function(error, data) {
     console.log(error);
     console.log(data);
     res.status(200).json(data)

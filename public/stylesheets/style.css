@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #E4F1FE;
 }
 
 a {
@@ -9,6 +10,28 @@ a {
 h1{
   display: inline;
 }
+
+#menu{
+  background-color: #59ABE3;
+}
+
 span.glyphicon{
   font-size: 2em;
+}
+
+.panel{
+color: white;
+  background-color: #59ABE3;
+  height: 15%;
+}
+
+.panel-body h2{
+  font-size: 4em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.ratings{
+font-size: 2em;
+ color: #eee;
 }

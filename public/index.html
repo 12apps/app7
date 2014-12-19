@@ -18,9 +18,13 @@
     <script type="text/template" id="restaurants">
       <% _.each(businesses, function (business){ %>
       <div class="panel panel-default">
-        <%= business.name %>
-        <%= business.rating %>
-        <%= business.review_count %>
+        <div class="panel-body">
+          <h2><%= business.name %></h2><br>
+          <div class="ratings">
+            <img src="<%= business.rating_img_url_large %>">
+            (<%= business.review_count %>)
+          </div>
+        </div>
       </div>
       <% }); %>
     </script>
