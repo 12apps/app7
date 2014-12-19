@@ -27,7 +27,6 @@ function yelpSearch(latlon, res){
     console.log(data);
     res.status(200).json(data)
   });
-
 }
 
 

@@ -6,3 +6,9 @@ body {
 a {
   color: #00B7FF;
 }
+h1{
+  display: inline;
+}
+span.glyphicon{
+  font-size: 2em;
+}
